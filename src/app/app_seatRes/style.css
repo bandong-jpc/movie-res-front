@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.movieDescription{
+  align-content: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+#movieDetails {
+  margin: 20px;
+}
+#movieTitle{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+#movieDesc{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.proceed{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.movieImage{
+  height: 300px;
+  align-self: center;
+  margin-left: 20px;
+}
+
+.seatsForm{
+  background: rgb(255, 255, 255);
+  display: grid;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.pageContainer{  
+  background-color: #3c3b44;
+  display: grid;
+  grid-template-columns: 45% 53%;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  margin-bottom: 50px;
+  /*font-family: 'Lato', 'sans-serif'; */
+}
+
+.movie-container {
+  margin: 10px 0;
+}
+
+.movie-container select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.seatContainer {
+  perspective:600px;
+  margin-bottom: 10px;
+}
+
+.seat {
+  background-color: rgb(116, 122, 128);
+  height: 20px;
+  width: 24px;
+  margin: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.seat.selected {
+  background-color: #6feaf6;
+}
+
+.seat.occupied {
+  background-color: rgb(255, 255, 255);
+}
+
+.seat:nth-of-type(4) {
+  margin-right: 20px;
+}
+
+.seat:nth-last-of-type(4) {
+  margin-left: 20px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.screen {
+  background-color: #fff;
+  height: 150px;
+  width: 100%;
+  align-items: center;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+}
+/*
+p.text {
+  margin: px 0;
+}
+
+p.text span {
+  color: #6feaf6;
+}
+*/
+
+#count{
+  color: #f87a26;
+}
+
+#total{
+  color: #f87a26;
+}
+
+/*Pop-up Log-in*/
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

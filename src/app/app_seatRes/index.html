@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome.css">
+    <link rel="stylesheet" href="templatemo-training-studio.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <div>
+      <header class="header-area header-sticky" style="box-shadow: 0px 0px 10px rgba(0,0,0,0.15)" style="
+      position: fixed;">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo" style="color: #1e1e1e;">Chicken-San<em>   Cinemas</em></a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          
+                          <li class="scroll-to-section"><a href="#features" style="color: #1e1e1e;">About</a></li>
+                          <li class="scroll-to-section"><a href="#our-classes" style="color: #1e1e1e;">Locations</a></li>
+                          <li class="scroll-to-section"><a href="#schedule" style="color: #1e1e1e;">Schedules</a></li>
+                          <li class="scroll-to-section"><a href="#contact-us" style="color: #1e1e1e;">Contact</a></li> 
+                          <li class="main-button"><a href="#">Sign Up / Log-in</a></li>
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <div style="grid-area: header; margin-bottom:80px;">
+  </div>
+  <div class="container">
+    <div class="pageContainer">
+      <div>
+        <div class="reservation">
+          <!--<div class="movie-container">
+            <label>Pick a movie:</label>
+            <select id="movie">
+              <option value="10">Avengers: Endgame ($10)</option>
+              <option value="12">Joker ($12)</option>
+              <option value="8">Toy Story 4 ($8)</option>
+              <option value="9">The Lion King ($9)</option>
+            </select>
+          </div>
+          <div class="movie-container">
+            <label>Pick a cinema:</label>
+            <select id="cinema">
+              <option value="10">Tugegarao Skyway</option>
+              <option value="12">Zimbabwe Local Tribe</option>
+              <option value="8">Himalayan Mountains</option>
+              <option value="9">Chicken-san Cinema</option>
+            </select>
+          </div>-->
+
+          <ul class="showcase">
+            <li>
+              <div class="seat"></div>
+              <small>N/A</small>
+            </li>
+
+            <li>
+              <div class="seat selected"></div>
+              <small>Selected</small>
+            </li>
+
+            <li>
+              <div class="seat occupied"></div>
+              <small>Occupied</small>
+            </li>
+          </ul>
+
+          <div class="seatContainer">
+            <div class="screen"></div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+            </div>
+
+            <div class="row">
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+
+            <div class="row">
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+
+            <div class="row">
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            
+            <div class="row">
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div>
+        <div class="seatsForm">
+          <div id=movieDetails>
+            <label id="movieTitle">Chicken Run $<span id="price">0</span></label>
+            <br>
+            <label id="movieSchedule">Schedule: <span id="schedule">10:35 AM - 11:47 AM</span></label>
+            <br>
+            <img class="movieImage" src="assets/chicken-run.jpg" alt="movieTitle">
+            <br>
+            <label id="movieDesc">
+              Chicken Run is a comedy escape drama with a touch of passion
+              set on a sinister Yorkshire chicken farm in 1950's England.
+              The film follows the turbulent romance between two farmyard
+              chickens, Rocky and Ginger, who yearn for freedom and plan
+              a daring 'prisoner of war' style escape.
+            </label>
+            <!--<form action="" style="margin: 30px;">
+              <p class="text">
+                <label>Enter Email</label>
+                <br>
+                <input type="email" placeholder="Email address..." required>
+                <br>
+                <br>
+                <label>Enter Contact No.</label>
+                <br>
+                <input type="tel" placeholder="Contact No." required>
+                <br>
+                <br>
+                
+                <label>Enter Email</label>
+                <br>
+                <input type="email" placeholder="Email address..." required>
+                <br>
+                <br>
+                
+                You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
+
+                <br>
+                <button type="submit">Proceed to Payment</button>
+                <br>
+              </p>
+            </form> -->
+          
+            <br>
+            <label style="font-size: 20px;">You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span></label>
+            <br>
+            <button class="proceed" style="width: 35%; margin-bottom: 20px;" onclick="openForm()">Proceed to Payment</button>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
+    <!-- Seats Script-->
+    <script src="script.js"></script>
+
+  </body>
+</html>
