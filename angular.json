@@ -94,7 +94,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "app/home/assets/css/bootstrap.min.css",
+              "app/home/assets/css/font-awesome.css",
+              "app/home/assets/css/templatemo-training-studio.css"
             ],
             "scripts": []
           }
